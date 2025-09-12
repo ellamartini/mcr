@@ -1,3 +1,37 @@
+// KFC BREAST AND THIGHS COMBO POST
+
+const breastThighs = document.getElementById('breastThighsImg');
+const breastUpdate = document.getElementById('hornyUpdate');
+const breastThighsDiv = document.getElementById('breastThighsDiv')
+const wolf = document.getElementById('wolfImg');
+
+breastThighs.addEventListener('mouseover', () => {
+  breastUpdate.style.visibility = 'visible';
+  wolf.style.visibility = 'hidden';
+  breastThighsDiv.classList.toggle('borderGlow');
+})
+
+breastThighs.addEventListener('mouseout', () => {
+  breastUpdate.style.visibility = 'hidden';
+  wolf.style.visibility = 'visible';
+  breastThighsDiv.classList.toggle('borderGlow');
+})
+
+
+
+// MAKE ROAR SOUND PLAY ON CLICK
+
+const roarAudio = document.getElementById('roarAudio');
+
+function playRoar() {
+  roarAudio.play();
+}
+
+
+
+
+// CURSOR
+
 var colour="rgba(0, 0, 0, 1)"; // in addition to "random" can be set to any valid colour eg "#f0f" or "red"
 var sparkles=50;
 

@@ -15,27 +15,39 @@
     </div>
     <nav id="navBar">
     <ul>
-        <li><a href="index.html">🥵</a></li>
+        <!-- <li><a href="index.html">🥵</a></li>
         <li><a href="p2.html">😭</a></li>
-        <li><a href="p3.html">😱</a></li>
+        <li><a href="p3.html">😱</a></li> -->
+        
     </ul>
     </nav>
 </header>
 
-<div id="arrows">
-
-</div>
-
+<!-- stuff on the top layer (gifs) -->
+    <img src="assets/arrow.gif" class="topLayer" id="pinkArrow">
+    <img src="assets/glitterKiss.gif" class="topLayer" id="glitterKiss">
+    <img src="assets/pearlBracelet.png" class="topLayer" id="pearlBracelet">
 <div class="imgContainer">
+    <!-- stuff in left column -->
+    <img src="assets/speakerIcon.png" class="topLayer" id="speakerIcon" onclick="playRoar()">
+    <audio id="roarAudio" src="assets/roar.mp3"></audio>
 <div class="column">
-    <!-- text posts -->
+    <!-- text posts (and audio player on top of left column)-->
+    <p id="audioTitle">AUDIO GUIDE</p>
+    <audio id="audioPlayer" controls src="/shared-assets/audio/t-rex-roar.mp3"></audio>
     <img src="assets/horny/horny17.jpg">
-    <img src="assets/horny/horny18.jpg">
-    <img src="assets/horny/horny170.jpg">
+        <div id="breastThighsDiv" class="borderGlow">
+            <img src="assets/horny/horny18.jpg" id="breastThighsImg">
+            <img src="assets/horny/horny18_2.PNG" id="hornyUpdate">
+        </div>
+    <img src="assets/horny/horny170.jpg" id="wolfImg">
     <img src="assets/horny/horny123.jpg">
     <img src="assets/horny/horny6.jpg">
     <img src="assets/horny/horny46.jpg">
-    <img src="assets/horny/horny80.jpg">
+    <img src="assets/horny/horny189.PNG">
+    <div id="crankIt">
+    <p id="audioTitle">click here to crank it to gore</p>
+        </div>
     <img src="assets/horny/horny101.jpg">
     <img src="assets/horny/horny7.jpg">
     <img src="assets/horny/horny34.jpg">
@@ -53,16 +65,21 @@
 </div>
     
 <div class="column">
+    <!-- images -->
     <img src="assets/photos/shorts3.PNG">
     <img src="assets/photos/gotTheJob2.GIF">
     <img src="assets/photos/office6.PNG">
     <img src="assets/photos/office7.PNG">
-    <img src="assets/photos/teacher6.jpg">
+    <img src="assets/photos/teacher6.JPG">
     <img src="assets/photos/nurse2.GIF">
     <img src="assets/photos/jackie1.PNG">
-    <img src="assets/photos/cheerleader5.GIF">
+    <img src="assets/photos/cheerleader5.GIF" id="cheerleader5" onclick="window.open('https://youtu.be/PRSRBkcBUPo?si=d2XBtMhfYETwPIND', '_blank')">
     <img src="assets/photos/bat3.PNG">
     <img src="assets/photos/noir1.PNG">
+</div>
+
+<div id="hornyUpdate">
+    
 </div>
 
 </div>
@@ -71,4 +88,5 @@
 <script type="text/javascript" src="index.js"></script>
 
 </body>
+
 </html>

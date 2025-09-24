@@ -29,6 +29,36 @@ function playRoar() {
 
 
 
+// REVEAL HIDDEN "CRANK IT TO GORE" POST
+
+const crankItDiv = document.getElementById('crankItDiv');
+const crankItText = document.getElementById('crankItText');
+const goreGIF = document.getElementById('goreGIF');
+
+function revealGore() {
+    if (goreGIF.style.visibility === "visible") {
+    goreGIF.style.visibility = "hidden";
+    crankItText.textContent = 'click here to crank it to gore';
+  } else {
+    goreGIF.style.visibility = "visible";
+    crankItText.textContent = 'put it back';
+  }
+}
+
+crankItDiv.addEventListener('mouseover', () => {
+  crankItText.style.color = 'rgb(224, 224, 224)';
+})
+
+crankItDiv.addEventListener('mouseout', () => {
+  crankItText.style.color = 'rgb(94, 21, 35)';
+})
+
+
+
+
+
+
+
 
 // CURSOR
 

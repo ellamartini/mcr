@@ -7,32 +7,47 @@
 
 <body>
 <header>
+    <img src="assets/questionsMarks.gif" class="topLayer" id="firstGIF">
+    <div id="fandomAsMethodology" class="topLayer">
+    <p>"When fans start to write they don’t hold back. Fan writing drips with desire, crossing boundaries, refusing categories. In the 1985 cult classic <i>Starlust</i>, an early collection of fan letters, confessions, diaries and interviews, mostly female fans – from love-struck teenagers obsessed with Nick Hayward to middle-aged Barry Manilow fans held in the grip of “Manilust” – recount (often aggressively sexual) fantasies about male rock star idols. The book feels hot and too much; the reader is both turned on and cringing. It is a similar experience to reading Chris Kraus’ <i>I Love Dick</i>, in which she recounts in painstaking and sometimes painful detail her obsession with a prominent academic; a fixation that manifests as a series of letters, written mostly herself and sometimes by her husband Sylvère Lotringer as an attempt – similar to the missives contained in <i>Starlust</i> – to unlock the creative potential of her crazed and paralysing infatuation. For Kraus, in <i>I Love Dick</i>, creativity and scholarly engagement are always intimately entwined with this specific form of fannish love. In one section from the book that is all about authorship and desire, she describes meeting up with a friend to discuss books and poems that feature their shared interest in 'mysticism, love, obsession. <b>Our conversations are not so much about the theories of love and desire, as its manifestations in our favourite books and poems. Study as a Fan Club meeting – the only kind.'"</b></p>
+    <p>From <i>Fandom As Methodology</i> By Catherine Grant and Kate Random Love</p>
+    </div>
     <div class="title">
     what dykes on tumblr post during an mcr livestream
     </div>
     <div class="subtitle">
     2022-2025
     </div>
-    <nav id="navBar">
-    <ul>
-        <!-- <li><a href="index.html">🥵</a></li>
-        <li><a href="p2.html">😭</a></li>
-        <li><a href="p3.html">😱</a></li> -->
-        
-    </ul>
-    </nav>
+   
 </header>
 
-<!-- stuff on the top layer (gifs) -->
+<!-- stuff on the top layer -->
+    <img src="assets/speakerIcon.png" class="topLayer" id="speakerIcon" onclick="playRoar()">
+    <audio id="roarAudio" src="assets/roar.mp3"></audio>
     <img src="assets/arrow.gif" class="topLayer" id="pinkArrow">
     <img src="assets/glitterKiss.gif" class="topLayer" id="glitterKiss">
     <img src="assets/pearlBracelet.png" class="topLayer" id="pearlBracelet">
     <img src="assets/gore.GIF" class="topLayer blackGlow" id="goreGIF">
+    <div id="march2023TextBox" class="topLayer">
+        <p id="closeMarch2023Top"><u>X</u></p>
+        <p>These are from the Australia leg of Swarm Tour in March 2023. These shows happened from 2am-6am for a week and I watched every single one via shitty Instagram livestreams even though I had a full time job. I'm pretty sure waking up from deep REM sleep at like 3am to fry my retinas with a live Gerard Way upskirt feed for six days straight left me with permanent brain damage. I felt so connected to not only the 2k people in the livestream with me and the 15k people at the show on the other side of the world, but also to all the fans throughout the history of music fandom who would have committed real, honest to God <i>crimes</i> to experience a nightly livestream pointed straight up their favorite musician's skirt. During MCR's orignal run in the 2000s, fans used their blogs to share shows with each other. LiveJournal is (still) littered with posts from young fans who would get home the night after their show and word vomit <i>every single detail</i> they remembered from the night in the most scattered, unedited form of reporting you can imagine. These posts certainly "drip with desire" (in Catherine Grant and Kate Random Love's words) in some ways, but my contemporary eyes and heart can feel how they're also held back by rock fandom sensibilities of the time. Even on the distinctly feminine LiveJournal platform, I find young women policing their words, their tone, their expressions. They report in a cool tone that "mcr totally kicked a$$ last night" and "played some of the old stuff". God forbid anyone get <i>too</i> excited.</p>
+        <img src="assets/livejournal/livejournal10.png">
+        <img src="assets/livejournal/livejournal11.png">
+        <p>Of course, I understand their impulse. I understand it deeply and intimately. When I was a teenager, I felt <i>bad</i> going to rock shows, because I felt like my presence in the pit as a teen girl hurt my favorite band's credibility. And I didn't want to hurt them. I <i>loved</i> them. But I couldn't show that to anyone--at least no one that I didn't trust. My touch contaminated anything I got close to with teen fangirl cooties. When people questioned me about liking what were essentially not-like-other-girl boybands I defensively exclaimed <i>It's about the music, not how hot they are.</i> That was what everyone else said. That was what <i>real</i> rock dudes said (or so the girls around me said). Then I grew up to be a twenty seven year old lesbian who gets faint at the sight of Gerard Way in a miniskirt. Somewhere along the way calling Gerard hot in a girl way started to feel empowering. It felt defiant. I'm not sure exactly when it flipped. 
+        <p id="closeMarch2023Bottom"><u>CLOSE</u></p>
+    </div>
+    <img src="assets/pressStart.gif" class="topLayer" id="clickGif">
+    <img src="assets/kerrang.jpg" id="kerrang" class="topLayer">
+    <button id="eraseButton" class="topLayer" onclick="resetTypedText()">erase</button>
+    <!-- text typing thing -->
+    <div class="typing-container topLayer">
+        <span id="typed-text"></span>
+        <span class="cursor">|</span>
+    </div>
+
+<!-- tumblr posts and gerard images (columns) -->
 <div class="imgContainer">
-    <!-- stuff in left column -->
-    <img src="assets/speakerIcon.png" class="topLayer" id="speakerIcon" onclick="playRoar()">
-    <audio id="roarAudio" src="assets/roar.mp3"></audio>
-<div class="column">
+    <div class="column">
     <!-- text posts (and audio player on top of left column)-->
     <p class="columnText">AUDIO GUIDE</p>
     <audio id="audioPlayer" controls src="/shared-assets/audio/t-rex-roar.mp3"></audio>
@@ -44,7 +59,7 @@
     <img src="assets/horny/horny170.jpg" id="wolfImg">
     <img src="assets/horny/horny123.jpg">
     <img src="assets/horny/horny6.jpg">
-    <img src="assets/horny/horny46.jpg">
+    <img src="assets/horny/horny46.jpg" style=cursor:pointer; onclick="window.open('https://en.wikipedia.org/wiki/Female_gaze', '_blank')">
     <img src="assets/horny/horny189.PNG">
     <div id="crankItDiv" class="blackGlow" onclick="revealGore()">
     <p class="columnText" id="crankItText" >click here to crank it to gore</p>
@@ -52,7 +67,7 @@
     <img src="assets/horny/horny101.jpg">
     <img src="assets/horny/horny7.jpg">
     <img src="assets/horny/horny34.jpg">
-    <img src="assets/horny/horny184.PNG">
+    <img src="assets/horny/horny184.png">
     <img src="assets/horny/horny146.jpg">
     <img src="assets/horny/horny143.jpg">
     <img src="assets/horny/horny154.jpg">
@@ -61,7 +76,7 @@
     <img src="assets/horny/horny132.jpg">
     <img src="assets/horny/horny142.jpg">
     <img src="assets/horny/horny141.jpg">
-    <img src="assets/horny/horny181.PNG">
+    <img src="assets/horny/horny181.png">
     <img src="assets/horny/horny19.jpg">
 </div>
     
@@ -69,12 +84,12 @@
     <!-- images -->
     <img src="assets/photos/shorts3.PNG">
     <img src="assets/photos/gotTheJob2.GIF">
-    <img src="assets/photos/office6.PNG">
+    <img src="assets/photos/office6.PNG" id="office6" class="grayGlow">
     <img src="assets/photos/office7.PNG">
-    <img src="assets/photos/teacher6.jpg">
+    <img src="assets/photos/teacher6.JPG">
     <img src="assets/photos/nurse2.GIF">
     <img src="assets/photos/jackie1.PNG">
-    <img src="assets/photos/cheerleader5.GIF" id="cheerleader5" onclick="window.open('https://youtu.be/PRSRBkcBUPo?si=d2XBtMhfYETwPIND', '_blank')">
+    <img src="assets/photos/cheerleader5.GIF" id="cheerleader5">
     <img src="assets/photos/bat3.PNG">
     <img src="assets/photos/noir1.PNG">
 </div>

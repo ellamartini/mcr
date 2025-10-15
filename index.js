@@ -54,6 +54,121 @@ crankItDiv.addEventListener('mouseout', () => {
 })
 
 
+// FANDOM AS METHODOLOGY TEXT BOX
+
+const fandomTextBox = document.getElementById('fandomAsMethodology');
+const firstGIF = document.getElementById('firstGIF');
+const twinkleSound = new Audio('assets/twinkleSound.mp3');
+
+firstGIF.addEventListener('mouseover', () => {
+  fandomTextBox.style.visibility = 'visible';
+  twinkleSound.play();
+})
+
+firstGIF.addEventListener('mouseout', () => {
+  fandomTextBox.style.visibility = 'hidden';
+})
+
+
+
+// MARCH 2023 TEXT BOX
+
+const march2023TextBox = document.getElementById('march2023TextBox');
+const office6 = document.getElementById('office6');
+const closeMarch2023Top = document.getElementById('closeMarch2023Top');
+const closeMarch2023Bottom = document.getElementById('closeMarch2023Bottom');
+
+
+office6.addEventListener('click', () => {
+  march2023TextBox.style.visibility = 'visible';
+  office6.style.animationPlayState = 'paused';
+})
+
+closeMarch2023Top.addEventListener('click', () => {
+  march2023TextBox.style.visibility = 'hidden';
+  office6.style.animationPlayState = 'running';
+})
+
+closeMarch2023Bottom.addEventListener('click', () => {
+  march2023TextBox.style.visibility = 'hidden';
+  office6.style.animationPlayState = 'running';
+})
+
+
+
+
+
+
+
+
+// TEXT TYPING EFFECT
+
+const typedTextSpan = document.getElementById("typed-text");
+const textArray = ["i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. "];
+const clickGif = document.getElementById("clickGif");
+const eraseButton = document.getElementById("eraseButton");
+const kerrang = document.getElementById("kerrang");
+
+// Timing controls
+const typingDelay = 10; // Speed of typing (ms per letter)
+const erasingDelay = 0; // Speed of erasing (ms per letter)
+const newTextDelay = 1000; // Pause before starting to erase
+const startTextDelay = 100; // How fast typing starts after the click
+
+let textIndex = 0; // Which sentence are we on?
+let charIndex = 0; // Which character are we on?
+
+// Type characters one by one
+function type() {
+  if (charIndex < textArray[textIndex].length) {
+    typedTextSpan.textContent += textArray[textIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } else {
+    // Pause before erasing --REMOVE THIS TO HAVE THE TEXT JUST STAY AND NOT ERASE
+    // setTimeout(erase, newTextDelay);
+    eraseButton.style.visibility = "visible";
+  }
+}
+
+// Erase characters one by one
+function erase() {
+  if (charIndex > 0) {
+    typedTextSpan.textContent = textArray[textIndex].substring(
+      0,
+      charIndex - 1
+    );
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } else {
+    // Move to the next text
+    // textIndex = (textIndex + 1) % textArray.length;
+    // setTimeout(type, typingDelay);
+    clickGif.style.visibility = "visible";
+    kerrang.style.visibility = "hidden";
+  }
+}
+
+// Kick things off on div click
+clickGif.addEventListener('click', () => {
+  setTimeout(type, startTextDelay);
+  clickGif.style.visibility = "hidden";
+  kerrang.style.visibility = "visible";
+});
+
+function resetTypedText() {
+  setTimeout(erase, erasingDelay);
+  eraseButton.style.visibility = "hidden";
+}
+
+
+
+
+
+
+
+
+
 
 
 

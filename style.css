@@ -210,7 +210,7 @@ li {
 #clickGif {
     width: 100px;
     left: 4%;
-    top: 3300px;
+    top: 3260px;
     cursor: pointer;
     filter: hue-rotate(285deg);
 }
@@ -221,8 +221,13 @@ li {
 
 #eraseButton {
     visibility: hidden;
-    top: 3000px;
-    left: 4%;
+    /* top: 3000px; */
+    top: 47%;
+    left: 15%;
+    width: 70px;
+    height: 35px;
+    font-size: 17px;
+    border-color: white;
     cursor: pointer;
 }
 
@@ -230,6 +235,12 @@ li {
   50% {
     opacity: 0;
   }
+}
+
+#bulletsCD {
+    top: 3550px;
+    left: 50vw;
+    width: 180px;
 }
 
 #goreGIF {

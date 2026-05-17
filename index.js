@@ -29,6 +29,21 @@ function playRoar() {
 
 
 
+// PEARL BRACELET SOUND EFFECT
+
+const crowdPanic = new Audio('assets/crowdPanic.mp3');
+const pearlBracelet = document.getElementById('pearlBracelet');
+
+pearlBracelet.addEventListener('mouseover', () => {
+  crowdPanic.play();
+})
+
+pearlBracelet.addEventListener('mouseout', () => {
+  crowdPanic.pause();
+})
+
+
+
 // REVEAL HIDDEN "CRANK IT TO GORE" POST
 
 const crankItDiv = document.getElementById('crankItDiv');
@@ -104,7 +119,7 @@ closeMarch2023Bottom.addEventListener('click', () => {
 // TEXT TYPING EFFECT
 
 const typedTextSpan = document.getElementById("typed-text");
-const textArray = ["i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. "];
+const textArray = ["i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. i feel in ways you cannot imagine. "];
 const clickGif = document.getElementById("clickGif");
 const eraseButton = document.getElementById("eraseButton");
 const kerrang = document.getElementById("kerrang");
@@ -372,4 +387,3 @@ function newColour() {
   c.sort(function(){return (0.5 - Math.random());});
   return ("rgb("+c[0]+", "+c[1]+", "+c[2]+")");
 }
-// ]]>

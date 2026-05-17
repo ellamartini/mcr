@@ -238,8 +238,8 @@ li {
 }
 
 #bulletsCD {
-    top: 3550px;
-    left: 50vw;
+    margin-top: 3550px;
+    margin-left: 50vw;
     width: 180px;
 }
 
